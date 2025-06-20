@@ -127,7 +127,7 @@ function App() {
       // Send transaction
       updateState(ProofState.SendingTransaction);
 
-      const provider = new RpcProvider({ nodeUrl: 'http://127.0.0.1:5050/rpc' });
+      const provider = new RpcProvider({ nodeUrl: 'https://starknet-sepolia.blastapi.io/64168c77-3fa5-4e1e-9fe4-41675d212522/rpc/v0_8' });
       // TODO: use conract address from the result of the `make deploy-verifier` step
       const contractAddress = '0x0486249e635381baff30e1ee12f99cb95a2ada789f68c708d7fdda28bd0a1a23';
       const verifierContract = new Contract(verifierAbi, contractAddress, provider);
